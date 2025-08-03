@@ -32,7 +32,7 @@ const MessageFrom = () => {
 
 
     return (
-        <div className='max-w-md mx-auto mt-15 p-6 border rounded-lg shadow-sm bg-white space-y-4'>
+        <div className='max-w-md mx-auto mt-10 p-6 border rounded-lg shadow-sm bg-white space-y-4'>
             <h2 className='text-center text-5xl font-bebas font-bold text-gray-800 mb-5 font-bebas'>DM Delay SENDER</h2>
 
             <Textarea className='font-normal'

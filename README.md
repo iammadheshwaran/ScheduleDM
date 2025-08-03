@@ -39,4 +39,9 @@ A smooth and modern app to **schedule your direct messages** with delay and cont
 
 ## 📁 Folder Structure
 
-<pre lang="markdown"><code>## 📁 Folder Structure ``` src/ ├── components/ # InputBox, DelayControls, TimerDisplay, Toast ├── hooks/ # useScheduleDM (custom hook) ├── pages/ # Main or future route pages ├── App.tsx # App layout and rendering └── main.tsx # Vite entry point ``` </code></pre>
+src/
+├── components/ # InputBox, DelayControls, TimerDisplay, Toast
+├── hooks/ # useScheduleDM (custom hook)
+├── pages/ # Main or future route pages
+├── App.tsx # App layout and rendering
+└── main.tsx # Vite entry point

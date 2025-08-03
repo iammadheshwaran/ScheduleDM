@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -41,7 +40,6 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-roboto: "Roboto", sans-serif;
   --font-bebas: "Bebas Neue", sans-serif;
 }
 

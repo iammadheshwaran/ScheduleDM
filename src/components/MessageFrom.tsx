@@ -33,7 +33,7 @@ const MessageFrom = () => {
 
     return (
         <div className='max-w-md mx-auto mt-15 p-6 border rounded-lg shadow-sm bg-white space-y-4'>
-            <h2 className='text-center text-4xl font-extrabold text-gray-800 mb-5 font-bebas'>DM delay sender</h2>
+            <h2 className='text-center text-5xl font-bebas font-bold text-gray-800 mb-5 font-bebas'>DM delay sender</h2>
 
             <Textarea className='font-normal'
                 placeholder='Type your message..'
@@ -54,7 +54,7 @@ const MessageFrom = () => {
 
 
             {sentMessage && (<div className='bg-green-200 border rounded p-3 text-green-900'> <p className='font-semibold'> Message sent:</p>
-                <p> {sentMessage}</p></div>)
+                <p className='font-bold'> {sentMessage}</p></div>)
             }
 
         </div>

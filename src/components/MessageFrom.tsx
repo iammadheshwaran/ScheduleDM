@@ -54,7 +54,7 @@ const MessageFrom = () => {
 
 
             {sentMessage && (<div className='bg-green-200 border rounded p-3 text-green-900'> <p className='font-semibold'> Message sent:</p>
-                <p> {sentMessage}</p></div>)
+                <p className='font-bold'> {sentMessage}</p></div>)
             }
 
         </div>

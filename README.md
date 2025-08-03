@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# 🕒 Schedule DM — React + TypeScript + Vite  
+A smooth and modern app to **schedule your direct messages** with delay and control. Built using **React + TypeScript + Vite**, it lets users set a timer before sending messages — offering flexibility to cancel, preview, or reschedule.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Schedule DMs with a customizable delay  
+✅ Cancel a scheduled message before it’s sent  
+✅ Choose from preset delays: **10s / 30s / 60s**  
+✅ Toast notification on message sent  
+✅ Optional message preview before sending  
+✅ Clean, responsive UI using **TailwindCSS + ShadCN**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 What You'll Learn
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Using `setTimeout()` and `clearTimeout()` for delay logic  
+- Managing message and timer state using `useState` and `useEffect`  
+- Conditional rendering for **Send** vs **Cancel** states  
+- Folder organization for scalability  
+- Building a modern UI with **TailwindCSS** and **ShadCN**  
+- Real-world use of scheduling and cancellation logic
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Tech            | Purpose                                 |
+|-----------------|-----------------------------------------|
+| React + Vite    | Fast and modern frontend setup          |
+| TypeScript      | Type-safe component and logic building  |
+| Tailwind CSS    | Utility-first styling framework         |
+| ShadCN UI       | Elegant, accessible UI components       |
+| React Icons     | For minimal, functional icons           |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Folder Structure
+
+src/
+├── components/ # InputBox, DelayControls, TimerDisplay, Toast
+├── hooks/ # useScheduleDM (custom hook)
+├── pages/ # Main or future route pages
+├── App.tsx # App layout and rendering
+└── main.tsx # Vite entry point

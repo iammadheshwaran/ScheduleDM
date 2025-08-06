@@ -4,7 +4,7 @@ import Home from './pages/Home'
 const App = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-white to-blue-50 px-4 py-10 sm:px-6">
-      <div className="flex-grow max-w-xl w-full mx-auto">
+      <div className="flex-grow mt-15 max-w-xl w-full mx-auto">
         <Home />
       </div>
 
